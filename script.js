@@ -5,7 +5,7 @@ function calculateChange() {
         return;
     }
 
-    const denominations = [25, 10, 5, 1];
+    const denominations = [1000, 500, 200, 100];
     let remainingAmount = parseInt(amount);
     const result = {};
     
@@ -22,6 +22,6 @@ function displayResult(result) {
     resultDiv.innerHTML = "<h2>Hasil Penukaran Koin:</h2>";
 
     for (let coin in result) {
-        resultDiv.innerHTML += `<p>${coin} sen: ${result[coin]} koin</p>`;
+        resultDiv.innerHTML += `<p>${coin} Rupiah: ${result[coin]} koin</p>`;
     }
 }
