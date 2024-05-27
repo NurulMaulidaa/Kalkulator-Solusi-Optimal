@@ -5,7 +5,7 @@ function calculateChange() {
         return;
     }
 
-    const denominations = [1000, 500, 200, 100];
+    const denominations = [100000, 50000, 20000, 10000, 5000, 2000, 1000];
     let remainingAmount = parseInt(amount);
     const result = {};
     
